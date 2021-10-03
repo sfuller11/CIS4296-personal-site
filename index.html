@@ -245,21 +245,50 @@
             <div class="col text-center course"><img src="images/sean.jpg" class="img-fluid" data-toggle="tooltip" data-placement="top"
                     title="Me" /></div>
 
-            <div class="col text-center course">
-                <ul class="nav">
-                  <li class="active">
-                    <a href="#">Home</a>
+            <div class="col">
+                <ul class="nav nav-tabs">
+                  <li class="dropdown">
+                    <a class="dropdown-toggle"
+                       data-toggle="dropdown"
+                       href="#">
+                        Dropdown
+                        <b class="caret"></b>
+                      </a>
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#basic" onclick="">Basic</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#career">Career</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hobbies">Hobbies</a>
+                    </li>
+                    </ul>
                   </li>
-                  <li><a href="#">Link</a></li>
-                  <li><a href="#">Link</a></li>
                 </ul>
-                <p class="text-justify">
-                - sing ASP.NET Core web API's as well as razor pages, a partner and I created a dating site.The site allows users to create a profile, bio, and upload pictures.U
+                <p class="text-justify" id="basic">
+                - My favorite color is blue
                 <br>
-                - The discover page on the site allows users to view others profiles and like/pass each profile.
+                - I have a dog named bailey
                 <br>
-                - We used SOAP and REST API's to manage likes, matches, and messages accoss the site.
-            </p>
+                - My favorite sport is baseball
+                </p>
+
+                <p class="text-justify" id="career">
+                - I am currently working as a software developer at UHS
+                <br>
+                - I plan in continuing as a software developer but find interest in Information security, data analytics, and cloud based computing
+                </p>
+
+                <p class="text-justify" id="hobbies">
+                - Working out and is one of my favorite things to do, helps with my energy and focus.
+                <br>
+                - I like playing video games here and there, RPG and first-person shooters being my favorite
+                <br>
+                - Cooking is one of my newest hobbies. I enjoy trying new things and finding ways to meet my needs nutritionaly. 
+                </p>
+                <span class="label label-important">I wanted to set visibility based on the dropdown, but was unsure where to put the javascript</span>
 
             </div>
         </div>
